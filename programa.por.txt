@@ -1,0 +1,22 @@
+programa
+{
+	funcao inicio ()
+	{
+	
+	// passo a passo para ir almoçar 
+	
+	escreva("Escolher restaurante\n")	
+	escreva("Ir para o restaurante\n")
+	escreva("Escolher a mesa\n")
+	escreva("Peça o cardápio\n")
+	escreva("Escolha o prato\n")
+	escreva("Fazer pedido\n")
+	escreva("Esperar o prato\n")
+	escreva("Comer\n")
+	escreva("Pede a conta\n")
+	escreva("Pagar a conta\n")
+	escreva("Ir embora\n")
+
+		
+	}
+}
