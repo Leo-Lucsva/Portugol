@@ -1,0 +1,28 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/12/2022
+Var
+// Seção de Declarações das variáveis 
+mat1, mat2, mat3: vetor[1..10,1..10] de inteiro
+num, num2: inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para num de 1 ate 10 faca
+   para num2 de 1 ate 10 faca
+      mat1[num,num2] <- randi(100)
+      mat2[num,num2] <- randi(100)
+   fimpara
+fimpara
+
+para num de 1 ate 10 faca
+   para num2 de 1 ate 10 faca
+      mat3[num,num2] <- mat1[num,num2] + mat2[num,num2]
+      escreva(mat3[num,num2], " ")
+   fimpara
+   escreval()
+fimpara
+
+Fimalgoritmo
