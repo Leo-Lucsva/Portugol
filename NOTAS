@@ -1,0 +1,43 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 22/12/2022
+Var
+notas: vetor[1..10, 1..5] de real
+alunos: vetor[1..10] de caracter
+aluno: caracter
+cont1, cont2: inteiro
+
+Inicio
+alunos[1] <- "Lucas"
+alunos[2] <- "Lion"
+alunos[3] <- "Julia"
+alunos[4] <- "Luiz"
+alunos[5] <- "Felipe"
+alunos[6] <- "Carlos"
+alunos[7] <- "Junior"
+alunos[8] <- "Roberto"
+alunos[9] <- "Ricardo"
+alunos[10] <- "Rogerio"
+
+para cont1 de 1 ate 10 faca
+   escreva(alunos[cont1], " ")
+   para cont2 de 1 ate 5 faca
+      notas[cont1,cont2] <- randi (10)
+      escreva(notas[cont1, cont2], " ")
+   fimpara
+   escreval()
+fimpara
+
+leia(aluno)
+para cont1 de 1 ate 10 faca
+   se (alunos[cont1] = aluno) entao
+      para cont2 de 1 ate 5 faca
+         escreva(notas[cont1, cont2])
+      fimpara
+   fimse
+fimpara
+
+Fimalgoritmo
