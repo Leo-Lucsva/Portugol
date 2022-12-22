@@ -1,0 +1,34 @@
+Algoritmo "semnome"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 20/12/2022
+Var
+// Seção de Declarações das variáveis 
+notas: vetor[1..10] de inteiro
+alunos: vetor[1..10] de caracter
+cont1, cont2, troca : inteiro
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+para cont1 de 1 ate 10 faca
+   notas[cont1] <- randi(50)
+   escreva(notas[cont1])
+fimpara
+escreval()
+para cont1 de 1 ate 10 faca
+   para cont2 de 1 ate 10 faca
+          se (notas[cont2] > notas[cont1]) entao
+            troca <- notas[cont2]
+            notas[cont2] <- notas[cont1]
+            notas[cont1] <- troca
+          fimse
+   fimpara
+fimpara
+
+para cont1 de 1 ate 10 faca
+   escreva(notas[cont1])
+fimpara
+
+
+Fimalgoritmo
