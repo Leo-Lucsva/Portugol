@@ -1,0 +1,49 @@
+Algoritmo "semnome"
+
+Var
+x,y,z: real
+resultado: logico
+type: caracter
+Inicio
+
+funcao verificar_triangulo (x1,y1,z1:real):logico
+inicio
+   se ((x1 + y1 > z1) e (x1 + z1 > y1) e (z1 + y1 > x1)) entao
+      escreval("Este triângulo é valido")
+      retorne verdadeiro
+   senao
+      escreval("Este triângulo não é válido")
+      retorne falso
+   fimse
+
+fimfuncao
+
+funcao tipo_triangulo (x,y,z:real):caracter
+inicio
+   se (x = y) e (y = z) entao
+      retorne "Triângulo equilátero"
+   senao
+   se (x = z) ou (z = y) ou (x = y) entao
+      retorne "Triângulo isósceles"
+   senao
+      retorne "Triângulo Escaleno"
+   fimse
+   fimse
+fimfuncao
+
+escreval("LADO 1: ")
+leia(x)
+
+escreval("LADO 2: ")
+leia(y)
+
+escreval("LADO 3: ")
+leia(z)
+
+resultado <- verificar_triangulo(x,y,z)
+se (resultado) entao
+   type <- tipo_triangulo(x,y,z)
+   escreval(type)
+fimse
+
+Fimalgoritmo
